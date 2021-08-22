@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capacidad de endeudamiento</title>
+    <link rel="stylesheet" href="./endeudamiento.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_tittle-container">
+        <h1>Capacidad de endeudamiento</h1>
+      </div>
+    </header>
+    <main>
+        <section class="main_section-form">
+            <div class="main_form-container">
+                <h2>Calcula tu capacidad de endeudamiento</h2>
+                <form action="">
+                    <label for="IngresosTotales">Escribe tus ingresos totales mensuales:
+                    </label>
+                    <input id="IngresosTotales" type="number" placeholder="(Ej: 15000)"><br>
+                    <label for="GastosFijos">Escribe tus gastos fijos mensuales:
+                    </label>
+                    <input id="GastosFijos" type="number" placeholder="(Ej: 5000)"><br>
+                    <label for="GastosVariables">Escribe tus gastos variables de este mes:
+                    </label><br>
+                    <input id="GastosVariables" type="number" placeholder="(Ej: 100)">
+                    <button type="button" onclick="calcularCapacidadDeEndeudamiento()">Calcular</button>
+                </form>
+            </div>
+        </section>
+        <section class="main_section-res">
+          <h2>Resultado:</h2>
+          <div class="main_res-container">
+            <p id="total"></p>
+          </div>
+        </section>
+      </main>
+    <script src="./endeudamiento.js"></script>
+  </body>
+</html>
